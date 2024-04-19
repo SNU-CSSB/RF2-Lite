@@ -41,6 +41,7 @@ e.g. python predict_complex.py -msa P77499_P77689.fas -out test -L1 248
 ```
 
 For batch-run inference:
+
 _Note: Batching will pad to the residue length of the longest example (len(p1) + len(p2)) in the list, increasing compute if there is a large discrepancy between protein lengths in a batch._
 ```
 python RF2-Lite/predict_complex_list.py -list %s -p cuda:0
