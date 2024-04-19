@@ -11,4 +11,3 @@ dependencies:
   - pytorch-cuda=11.7
   - dglteam/label/cu117::dgl
   - pyg::pyg
-  - bioconda::hhsuite
