@@ -1,0 +1,13 @@
+run predict_complex.py or predict_complex_list.py
+
+python predict_complex.py -msa [paired MSA] -out [output prefix] -L1 [length of first chain]
+(e.g. python predict_complex.py -msa P77499_P77689.fas -out test -L1 248)
+
+python predict_complex_list.py -list [list file (e.g. negative.inputs)]
+
+3. outputs
+there will be two outputs [out]_00.npz and [out]_00_init.pdb
+In npz file, you can find inter-chain contact prob. and residue-wise pLDDT
+
+prob = np.load(npz_fn)['dist'] # shape: (L1, L2)
+plddt = np.load(npz_fn)['plddt'] # shape: (L1+L2)
