@@ -30,9 +30,10 @@ tar xfz weights.tar.gz
 ```
 
 ## Usage
-RF2-Lite requires 1) a paired multiple seqeunce alignment and 2) the length of each chain to predict if two or more proteins are interacting. Paired MSAs for RF2-Lite are concatenated alignments with no character deliminating the chain breaks (see examples).
+RF2-Lite requires 1) a paired multiple seqeunce alignment and 2) the length of each chain to predict if two or more proteins are interacting. Paired MSAs for RF2-Lite are concatenated alignments with no character deliminating the chain breaks.
 
 See examples in RF2-Lite/example/
+
 For pair inference:
 ```
 python predict_complex.py -msa {paired MSA} -out {output prefix} -L1 {length of first chain}
