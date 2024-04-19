@@ -1,0 +1,13 @@
+name: RF2Lite
+channels:
+  - pytorch
+  - nvidia
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pytorch=2.2.1
+  - pytorch-cuda=12.1
+  - dglteam/label/cu121::dgl
+  - pyg::pyg

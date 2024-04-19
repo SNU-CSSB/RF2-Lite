@@ -225,5 +225,5 @@ def get_args():
 if __name__ == "__main__":
     args = get_args()
     if not os.path.exists("%s.npz"%args.out):
-        pred = Predictor()
-        pred.predict(args.msa, args.out, args.L1, use_trf=args.use_trf, use_fp32=args.use_fp32, write_pdb_output=args.write_pdb)
+        pred = Predictor(write_pdb_output=args.write_pdb)
+        pred.predict(args.msa, args.out, args.L1, use_trf=args.use_trf, use_fp32=args.use_fp32)
